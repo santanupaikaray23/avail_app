@@ -1,0 +1,119 @@
+.aboutourstory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Basic styles for left and right sections */
+.left, .right {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Wrapper and content styles */
+.wrapper2 {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.AboutOurStoryContainer {
+  background: url(https://i.ibb.co/LQyT3pf/home-img-03.png);
+  width: 500px;
+  height: 400px;
+  max-width: 550px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  
+}
+
+/* Skill box styles */
+.skill-box {
+    margin: 20px 0 10;
+}
+
+.skill-bar {
+    background: #ddd;
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
+
+.skill-per {
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Custom width for skill percentage bars */
+.skill-per.html { width: 76%; }
+.skill-per.app { width: 89%; }
+.skill-per.internship { width: 75%; }
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.skill-per:hover .tooltiptext {
+    visibility: visible;
+}
+.title{
+    font-weight: bold;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .aboutourstory {
+        flex-direction: column;
+    }
+    .p4{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper1 {
+        padding: 10px;
+    }
+    .AboutOurStoryContainer {
+      width: 100%; /* Takes a bit less space */
+      height: 140%;
+      padding: 55%;
+  }
+
+    .skill-bar {
+        height: 15px;
+    }
+
+    .skill-per {
+        height: 15px;
+    }
+    .skill-box {
+        margin: 40px 20px 5px;
+    }
+    p4{
+        display: none;
+    }
+}
